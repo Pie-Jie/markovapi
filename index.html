@@ -7,9 +7,10 @@
     </head>
     <body>
         <header><h1>Markov API</h1></header>
+        <p></p>
         <script>
             $.get('/getdata', {}, function(data)) {
-                console.log(data);
+                $('p').append(data);
             });
         </script>
     </body>
